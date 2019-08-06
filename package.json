@@ -1,0 +1,37 @@
+{
+  "name": "Photo-App",
+  "version": "1.0.0",
+  "description": "An app that fetch photos from unsplash in the backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test/test.test.js | tap-spec",
+    "start": "node src/index.js",
+    "watch": "nodemon src/index.js",
+    "coverage": "nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSG-G7/Photo-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSG-G7/Photo-App/issues"
+  },
+  "homepage": "https://github.com/GSG-G7/Photo-App#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "nodemon": "^1.19.1",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.11.0"
+  }
+}
