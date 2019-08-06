@@ -1,4 +1,4 @@
-const controllers = require('./views/controllers');
+const controllers = require('./controllers');
 const express = require('express');
 const exphbs = require('express-handlebars');
 const path = require('path');
@@ -12,13 +12,15 @@ app.engine(
   'hbs',
   exphbs({
     extname: 'hbs',
-    layoutsDir: path.join(__dirname, 'views', 'layout'),
+    layoutsDir: path.join(__dirname, 'views', 'layouts'),
+    partialsDir: path.join(__dirname, 'views', 'partials'),
     defaultLayout: 'main'
   })
 );
 
-app.use(controllers);
 app.set('port', process.env.PORT || 2010);
 app.set('hostname', process.env.HOSTNAME || 'localhost');
+
+app.use(controllers);
 
 module.exports = app;
