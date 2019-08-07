@@ -1,5 +1,4 @@
 const input = document.querySelector('.main__input');
-const btn = document.querySelector('.main__button');
 const form = document.querySelector('.main__form');
 const span = document.querySelector('.main__span');
 form.addEventListener('input', e => {

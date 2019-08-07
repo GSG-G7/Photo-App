@@ -15,8 +15,7 @@ const search = (req, res) => {
   nodeFetch(API.getUrl(req.body.search))
     .then(_res => _res.json())
     .then(data => res.render('results', { data: data.results }))
-    .catch(err =>
-      res.status(500).render('500', { message: 'Internal Server Error', err })
+    .catch(err => res.status(500).render('500', { message: 'Internal Server Error', err })
     );
 };
 module.exports = search;
