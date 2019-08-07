@@ -4,7 +4,7 @@ const { join } = require('path');
 const controllers = require('./controllers');
 
 const app = express();
-app.use(express.static(join(__dirname, '..', 'public')));
+
 app.disable('x-powered-by');
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencode
 app.set('views', join(__dirname, 'views')); // A directory or an array of directories for the application's views
