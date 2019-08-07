@@ -1,9 +1,9 @@
-var test = require('tape');
+const test = require('tape');
 
-test('Phto-app', function(t) {
+test('Phto-app', t => {
   t.plan(1);
-  t.test('inital test', t => {
-    t.equal(1, 1);
-    t.end()
+  t.test('inital test', t1 => {
+    t1.equal(1, 1);
+    t1.end();
   });
 });
