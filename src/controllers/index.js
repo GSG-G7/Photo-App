@@ -1,7 +1,7 @@
 const express = require('express');
-const router = express.Router();
-
 const home = require('./home');
+
+const router = express.Router();
 
 router.get('/', home);
 
