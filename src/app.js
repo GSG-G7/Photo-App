@@ -6,7 +6,6 @@ const controllers = require('./controllers');
 const app = express();
 
 app.disable('x-powered-by');
-// app.use(express.json());
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencode
 app.set('views', join(__dirname, 'views')); // A directory or an array of directories for the application's views
 app.set('view engine', 'hbs'); // The default engine extension to use
@@ -14,7 +13,7 @@ app.set('view engine', 'hbs'); // The default engine extension to use
 app.engine(
   'hbs',
   exphbs({
-    //  have no idea what is this
+    // I have no idea what is this
     extname: 'hbs',
     layoutsDir: join(__dirname, 'views', 'layouts'),
     partialsDir: join(__dirname, 'views', 'partials'),
