@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+  background: #eeeeeeaf;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.main__form {
+  margin: 1rem 0;
+}
+
+.main__input {
+  padding: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  outline: none;
+}
+
+.main__button {
+  padding: 1rem;
+  background: rgb(80, 80, 80);
+  color: #fff;
+  border: 1px solid #aaa;
+  border-radius: 12px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.main__button:hover {
+  background: rgb(124, 124, 124);
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photos img {
+  width: 30%;
+}
+
+@media (max-width: 600px) {
+  .photos img {
+    width: 100%;
+  }
+}
